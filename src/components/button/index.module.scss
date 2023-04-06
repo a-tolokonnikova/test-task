@@ -1,0 +1,7 @@
+@import "../../assets/styles/mixins";
+
+.button {
+  padding: 8px 12px;
+  @include button;
+  font-size: 1.25rem;
+}

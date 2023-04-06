@@ -1,0 +1,42 @@
+@import "../../../../assets/styles/mixins";
+
+.list {
+  width: 1280px;
+  display: flex;
+}
+
+.scrollable {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  &::-webkit-scrollbar {
+    background: transparent;
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+  }
+}
+
+.left,
+.right {
+  @include button;
+  text-align: center;
+  display: flex;
+  align-items: center;
+
+  img {
+    height: 1.25rem;
+    width: auto;
+  }
+}
+
+.left {
+  margin-right: 8px;
+}
+
+.right {
+  margin-left: 8px;
+}

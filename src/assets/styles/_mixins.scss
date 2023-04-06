@@ -1,0 +1,13 @@
+@import "./colors";
+
+@mixin button {
+  padding: 8px;
+  background-color: $btn-background;
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $btn-hover;
+  }
+}

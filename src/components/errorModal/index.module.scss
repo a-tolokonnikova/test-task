@@ -1,0 +1,32 @@
+@import "../../assets/styles/mixins";
+
+.error {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 500px;
+  height: fit-content;
+  display: flex;
+  padding: 24px 32px;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px solid #d9d9d9;
+  font-size: 1.4rem;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.visible {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.button {
+  align-self: flex-end;
+  @include button;
+  font-size: 1.25rem;
+}
